@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* from-sky-200 via-rose-200 to-lime-200 w-full */
+@layer base {
+    body {
+        /* background: #d2e2f5; */
+        @apply bg-gradient-to-br from-sky-200 via-rose-200 to-lime-200 bg-no-repeat bg-cover bg-fixed bg-center;
+
+    }
+    header {
+        @apply bg-white bg-opacity-70 backdrop-blur-lg rounded drop-shadow-lg;
+    
+    }
+    footer {
+        @apply bg-white bg-opacity-50 backdrop-blur-lg rounded drop-shadow-lg;
+    }
+}
+
+@layer components {
+    /* .fondo {
+        @apply bg-white bg-opacity-20 backdrop-blur-lg rounded drop-shadow-lg;
+    
+    } */
+    
+    .fondo2 {
+        @apply bg-white bg-opacity-70 backdrop-blur-lg rounded drop-shadow-lg;
+    }
+    .product-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+    .deals-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+    .banner {
+        height: 400px;
+        background-size: cover;
+        background-position: center;
+        animation: changeBackground 9s infinite;
+    }
+
+    @keyframes changeBackground {
+        0%, 100% {
+            background-image: url('image1.jpg'); /* Replace with your image URL */
+        }
+        33.33% {
+            background-image: url('image2.jpg'); /* Replace with your image URL */
+        }
+        66.66% {
+            background-image: url('image3.jpg'); /* Replace with your image URL */
+        }
+    }
+}
