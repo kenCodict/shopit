@@ -36,8 +36,8 @@ export const CartShoppingPage = () => {
         <Layout>
             <h1 className='mb-5 font-bold text-4xl'>My shopping cart</h1>
 
-            <div className='flex flex-grow justify-between items-start max-w-screen-lg'>
-                <div className='overflow-y-scroll px-20'>
+            <div className='flex flex-grow justify-between items-center flex-wrap max-w-screen-lg p-4 lg:w-[70%] w-[90%]'>
+                <div className='overflow-y-scroll lg:px-10'>
                     {
                         context.cartProducts.map((prod) => (
                             <OrderCard

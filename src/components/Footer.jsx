@@ -41,9 +41,9 @@ export const Footer = () => {
                     </div>
                 )}
             </div>
-            <footer className='flex justify-between items-center botton-0 py-3 px-8 text-sm font-light flex-col lg:flex-row'>
+            <footer className='flex justify-between items-center botton-0 py-3 px-8 text-sm font-light flex-col lg:flex-row gap-4'>
                 <p>Kencodict Tech</p>
-                <div className="flex justify-center space-x-4">
+                <div className="flex justify-center space-x-4 ">
           <a href="#" className="text-gray-600 hover:text-blue-500">
             <FaFacebookSquare className="text-2xl"/>
             

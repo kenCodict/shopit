@@ -14,9 +14,9 @@ export const Account = () => {
     return (
         <Layout>
    
-    <div className="flex flex-col items-center justify-center h-screen w-[400px]">
+    <div className="flex flex-col items-center justify-center h-screen w-[90%] lg:w-[70%] overflow-hidden max-w-[400px] p-4 mx-auto  bg-white bg-opacity-70 backdrop-blur-lg rounded drop-shadow-lg">
       <h2 className="text-3xl font-semibold mb-4">Sign Up</h2>
-      <form className="w-[400px]" onSubmit={handleSignup}>
+      <form className="w-full" onSubmit={handleSignup}>
         <input
           type="email"
           placeholder="Email"

@@ -14,8 +14,8 @@ export const OrderCard = ({ id, title, imageUrl, price, handleDelete }) => {
     // let currentPath = path.includes('/my-order');
 
     return (
-        <div className='flex justify-between items-center px-4 mb-2'>
-            <div className='flex items-center gap-2'>
+        <div className='flex justify-between items-center px-4 mb-2 w-full'>
+            <div className='flex items-center gap-2 overflow-visible'>
                 <figure className='w-20 h-20'>
                     <img className='w-full h-full object-contain' src={imageUrl} alt={`Image ${title}`} />
                 </figure>

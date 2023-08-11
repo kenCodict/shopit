@@ -18,10 +18,10 @@
 }
 
 @layer components {
-    /* .fondo {
-        @apply bg-white bg-opacity-20 backdrop-blur-lg rounded drop-shadow-lg;
+    .fondo {
+        @apply bg-white bg-opacity-70 backdrop-blur-lg rounded drop-shadow-lg;
     
-    } */
+    }
     
     .fondo2 {
         @apply bg-white bg-opacity-70 backdrop-blur-lg rounded drop-shadow-lg;
