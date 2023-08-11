@@ -51,7 +51,7 @@ const Banner = () => {
 {
     slides.map(({title, subtitle, text, link, image},index) => {
 return (
-<article className={`h-[400px] w-full lg:h-screen lg:w-full  relative`} key={index}>
+<article className={`h-[500px] w-full lg:h-screen lg:w-full  relative`} key={index}>
 <div className="w-full h-full absolute left-0 right-0 bg-[rgba(0,0,0,0.5)] z-5 flex flex-col items-center justify-center ">
    <Slide cascade={true} damping={0.5} direction='up' duration={500} fraction={1} triggerOnce={false}>
    <h1 className="text-[1.5rem] md:[2rem] lg:text-[3rem] font-black p-10 border-4 rounded-br-2xl rounded-tl-2xl border-gold-100 text-[white] uppercase text-center">{title}</h1>
